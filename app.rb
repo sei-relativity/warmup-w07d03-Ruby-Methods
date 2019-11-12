@@ -9,13 +9,11 @@ end
 find_difference("abcd", "baedc") # e
 
 
+
 def missing_num(arr)
-    a = []
-    arr.length.times { |i|
-      c = i + 1
-      a.push(c)
-    }
+    a = (1..arr.length).to_a
     return a - arr
-   end
+  end
+  
    p missing_num([3, 0, 1]) #2
    p missing_num([9, 6, 4, 2, 3, 5, 7, 0, 1]) #8
