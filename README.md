@@ -55,8 +55,11 @@ Output: 8
 ```ruby
 
 def missing_num(arr)
-
+    for i in 0..arr.max
+    return i if i != arr.sort[i]
 end
+    arr.max
+end 
 
 missing_num([3,0,1]) #2
 
