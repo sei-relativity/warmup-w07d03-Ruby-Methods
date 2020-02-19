@@ -23,7 +23,7 @@ Explanation: 'e' is the letter that was added.
 ```ruby
 
 def find_difference(s , t)
-
+ (t.sum - s.sum).chr
 end
 
 find_difference("abcd", "baedc") # e
@@ -50,7 +50,8 @@ Output: 8
 ```ruby
 
 def missing_num(arr)
-
+    b = (arr.min..arr.max).to_a
+    p b-arr
 end
 
 missing_num([3,0,1]) #2
