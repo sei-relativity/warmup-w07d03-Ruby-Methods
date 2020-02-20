@@ -22,11 +22,14 @@ Explanation: 'e' is the letter that was added.
 
 ```ruby
 
-def find_difference(s , t)
+  def find_difference(s,t)
+  s= s[0].split('')
+ t= t[0].split('')
+     z = t - s
+      puts z
+    end
 
-end
-
-find_difference("abcd", "baedc") # e
+find_difference('abcd', 'baedc') # e
 
 ```
 
